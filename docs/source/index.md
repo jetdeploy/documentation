@@ -8,12 +8,11 @@ Check out the {doc}`usage` section for further information, including
 how to {ref}`installation` the project.
 
 ```{note}
-This text is **standard** *Markdown*
+JetDeploy is **in closed alpha** *status*
 ```
 
 ## Contents
 
 ```{toctree}
 usage
-api
 ```
