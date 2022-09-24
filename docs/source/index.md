@@ -14,5 +14,5 @@ JetDeploy is **in closed alpha** *status*
 ## Contents
 
 ```{toctree}
-usage
+resources
 ```
