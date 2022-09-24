@@ -15,4 +15,5 @@ JetDeploy is **in closed alpha** *status*
 
 ```{toctree}
 resources
+terms-privacy
 ```
