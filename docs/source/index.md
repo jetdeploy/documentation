@@ -8,7 +8,7 @@ Check out the {doc}`usage` section for further information, including
 how to {ref}`installation` the project.
 
 ```{note}
-JetDeploy is **in closed alpha** *status*
+JetDeploy is **in closed alpha** *status*.
 ```
 
 ## Contents
