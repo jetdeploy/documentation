@@ -1,11 +1,11 @@
-## Terms & Privacy
+# Terms & Privacy
 
 We're developers like you are, we know exactly what are the values and the trust that you need and deserve:
 
 *   we **work hard** to maintain our infrastructure secure and hardened;
-*   we'll **never** access to your repo code;
-*   we'll **never** access to your data;
-*   we'll **never** share to your profile to anyone.
+*   we **never** access to your repo code;
+*   we **never** access to your data;
+*   we **never** share to your profile to anyone.
 
 Our specialists are very glad to do the best for you and your clients, please let them know if anything is upsetting you.
 

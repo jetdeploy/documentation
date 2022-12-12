@@ -35,3 +35,5 @@ templates_path = ['_templates']
 
 html_theme = 'sphinx_rtd_theme'
 
+myst_heading_anchors = 3
+#myst_enable_extensions = 'html_image'
