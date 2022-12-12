@@ -108,14 +108,14 @@ JetDeploy is **in closed alpha** *status*, so at the moment to increase the Stor
     Then check connection details in the _Service Detail_ page:
 
     ```{note}
-    SQL Databases: `PostgreSQL`
-    Version: `13.8`
-    Status: `Ready`
-    External Endpoint: `creaky-pelting.gw1.jetdeploy.app:19184`
-    Internal Endpoint: `creaky-pelting:5432`
-    Database Name: `database-0` (created on setup)
-    Username: `postgres` (created on setup)
-    Password: `726221f8f95042e5be434df1a906bb5c`
+    SQL Databases: `PostgreSQL`  
+    Version: `13.8`  
+    Status: `Ready`  
+    External Endpoint: `creaky-pelting.gw1.jetdeploy.app:19184`  
+    Internal Endpoint: `creaky-pelting:5432`  
+    Database Name: `database-0` (created on setup)  
+    Username: `postgres` (created on setup)  
+    Password: `726221f8f95042e5be434df1a906bb5c`  
     ```
 
     Now you're ready to connect:
