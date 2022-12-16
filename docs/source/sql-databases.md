@@ -1,35 +1,35 @@
 # SQL Databases
 
-In JetDeploy console you can start a fully dedicated SQL Database instance. Supported types are:
+In JetDeploy console you can start a fully dedicated SQL Database instance. Supported platforms are:
 
-- PostgreSQL <span><img src="_static/images/postgresql.png" alt="PostgreSQL" width="28px"></span>
-- MariaDB <span><img src="_static/images/mariadb.png" alt="MariaDB" width="28px"></span>
-- MySQL <span><img src="_static/images/mysql.png" alt="MySQL" width="28px"></span>
+- PostgreSQL <span><img src="/_static/images/postgresql.png" alt="PostgreSQL" width="28px"></span>
+- MariaDB <span><img src="/_static/images/mariadb.png" alt="MariaDB" width="28px"></span>
+- MySQL <span><img src="/_static/images/mysql.png" alt="MySQL" width="28px"></span>
 
 ### Create
 
 During service creation you need to select:
 
-- __Engine__
-
+- __Type__
+  
   Choose one of the supported database type and version
 
 - __Service name__
-
+  
   A unique service ident name. This name cannot be changed after creation. A random string is filled as initial default value
 
 Click _Next_ button to add few more specifications:
 
 - __Database name__
-
+  
   Choose a database name that will be created on setup
 
 - __Storage size__
-
+  
   Define the initial max storage size of the database
 
 ```{note}
-Connection and authentication data (e.g. username, password, FQDN) will be visible in the detail page after database creation success.
+Connection and authentication data (e.g. host, port, username and password) will be visible in the detail page after database creation success.
 ```
 
 Click _Next_ button and the database creation process will start.
@@ -39,37 +39,41 @@ Click _Next_ button and the database creation process will start.
 
 In the _Service Detail_ page you can access to various information of your database:
 
-- __Engine__
-
-  Engine of your database (e.g. PostgreSQL, MariaDB, etc.)
+- __Type__
+  
+  Type of your database instance (e.g. PostgreSQL, MariaDB, etc.)
 
 - __Version__
-
-  Full version of your running database engine (e.g. `13.8` for PostgreSQL, `10.7` for MariaDB, etc.)
+  
+  Full version of your running database instance (e.g. `13.8` for PostgreSQL, `10.7` for MariaDB, etc.)
 
 - __Status__
-
-  Status of your database engine. To be fully operational your database must be in `Ready` state.
+  
+  Status of your database instance. To be fully operational it must be in `Ready` state.
 
 - __External Endpoint__
-
+  
   It is the external endpoint of your database instance, reachable by your laptop, external services or apps running out of JetDeploy infrastructure. `<External-Host>`:`<External-Port>` you find here can be used to connect by client utilities (_psql_ for PostgreSQL, _mysql_ for MariaDB/MySQL) for database administration tasks.
 
   ```{note}
-  Visible only when <span><img src="_static/images/expose.png" alt="PostgreSQL" width="60px"></span> action done
+  Visible only when <span><img src="/_static/images/expose.png" alt="Expose" width="60px"></span> action done
   ```
 
 - __Internal Endpoint__
-
-  It is the internal endpoint of your database instance, reachable by other Services or Apps you create in JetDeploy. `<Host>`:`<Port>` you find here can be used as _Environment variables_ in your App to connect to this database instance.
+  
+  It is the internal endpoint of your database instance, reachable by other Services or Apps you create in JetDeploy. `<Host>`:`<Port>` you find here can be used as _Environment variables_ in your App to connect to this service.
 
 - __Database Name__
-
+  
   Name of the custom database (created at startup) you choose during the creation process. `<name>` of the database you find here can be used as _Environment variable_ in your App to connect to this database instance.
 
 - __Username__
+  
+  Root user of the database instance (e.g. `postgres` for PostgreSQL engine, `root` for MariaDB/MySQL).
 
-  Root username of the database instance (e.g. `postgres` for PostgreSQL engine, `root` for MariaDB/MySQL).
+- __Password__
+  
+  Random generated password of the root user.
 
 ```{tip}
 For security reason we suggest you to create a new application-specific username and password, using a strong password and the least privilege principle
@@ -81,17 +85,16 @@ In the _Operations_ section, at bottom, you can view information of the tasks cr
 
 Different types of _Action_ can be executed on a SQL database instance:
 
-<span><img src="_static/images/expose.png" alt="PostgreSQL" width="80px"> Use this action when you need to connect to your SQL database instance from external, e.g. your development computer or an application or service not running in JetDeploy platform.
+<span><img src="/_static/images/expose.png" alt="Expose" width="80px"> Use this action when you need to connect to your SQL database instance from external, e.g. your development computer or an application or service not running in JetDeploy platform.  
 For security reasons we suggest you to keep _external access_ active for a short period of time, limited to the time necessary for data migration or database maintenance.</span>
 
-<span><img src="_static/images/restart.png" alt="PostgreSQL" width="80px"> Invoke a restart of your SQL database instance.</span>
+<span><img src="/_static/images/restart.png" alt="Restart" width="80px"> Invoke a restart of your SQL database instance.</span>
 
-<span><img src="_static/images/destroy.png" alt="PostgreSQL" width="80px"> Request a service destroy of your SQL databse instance.</span>
+<span><img src="/_static/images/destroy.png" alt="Destroy" width="80px"> Request a service destroy of your SQL databse instance.</span>
 
 ```{warning}
 `Destroy` action is risky and you will lose all your data. Please be absolutely sure when run this action.
 ```
-
 
 ### Settings
 
@@ -104,7 +107,7 @@ JetDeploy is **in closed alpha** *status*, so at the moment to increase the Stor
 
 - `psql` utility for PostgreSQL
 
-    First of all you should _Expose_ your Service if you run the utility on your local laptop.
+    First of all you should _Expose_ your Service if you run the utility on your local laptop.  
     Then check connection details in the _Service Detail_ page:
 
     ```{note}
@@ -117,19 +120,19 @@ JetDeploy is **in closed alpha** *status*, so at the moment to increase the Stor
     Username: `postgres` (created on setup)  
     Password: `726221f8f95042e5be434df1a906bb5c`  
     ```
-
+    
     Now you're ready to connect:
 
     ```bash
     $ psql -h creaky-pelting.gw1.jetdeploy.app -p 19184 -U postgres database-0
     ```
-
+    
     Press enter. The utility will ask for a password:
 
     ```bash
     Password for user postgres:
     ```
-
+    
     Insert the password and press Enter
 
     ```bash
