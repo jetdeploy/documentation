@@ -2,7 +2,7 @@
 
 In JetDeploy console you can start a fully dedicated S3-compatible Object Storage instance. Supported platform is:
 
-- MinIO <span><img src="/_static/images/minio.png" alt="MinIO" width="28px"></span>
+- MinIO <span><img src="/_static/images/minio.png" alt="MinIO" width="32px"></span>
 
 ### Create
 
@@ -62,16 +62,16 @@ In the _Service Detail_ page you can access to various information of your datab
   Visible only when Service type provide a management console
   ```
 
-- __Console Username / S3 Access Key ID__
+- __Console Username / S3 AccessKey__
   
   S3 Access Key ID of the Object Storage instance (e.g. `root` for MinIO).
 
-- __Console Password / S3 Secret Access Key__
+- __Console Password / S3 SecretKey__
   
   S3 Secret Access Key of the Object Storage instance.
 
 ```{tip}
-For security reason we suggest you to create a new application-specific username and password, using a strong password and the least privilege principle
+For security reason we suggest you to create a new application-specific Access Key ID and Secret Access Key, using password policy recommendations and the least privilege principle
 ```
 
 In the _Operations_ section, at bottom, you can view information of the tasks created by various Actions you can run on your SQL database using JetDeploy console.
@@ -101,7 +101,7 @@ JetDeploy is **in closed alpha** *status*, so at the moment to increase the Stor
 
 - Management `Console` of MinIO
 
-    Simply visit your Console endpoint and insert credentials to authenticate!
+    Simply visit your instance Console endpoint and insert credentials to authenticate!
 
 - `s3cmd` or `mc` utility for MinIO
 

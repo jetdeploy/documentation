@@ -76,7 +76,7 @@ In the _Service Detail_ page you can access to various information of your datab
   Random generated password of the root user.
 
 ```{tip}
-For security reason we suggest you to create a new application-specific username and password, using a strong password and the least privilege principle
+For security reason we suggest you to create a new application-specific username and password, using password policy recommendations and the least privilege principle
 ```
 
 In the _Operations_ section, at bottom, you can view information of the tasks created by various Actions you can run on your SQL database using JetDeploy console.

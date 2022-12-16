@@ -2,7 +2,7 @@
 
 In JetDeploy console you can start a fully dedicated Message Broker instance to accomplish Publish/Subscribe pattern in your webapp architecture. Supported platform is:
 
-- RabbitMQ <span><img src="/_static/images/rabbitmq.png" alt="RabbitMQ" width="28px"></span>
+- RabbitMQ <span><img src="/_static/images/rabbitmq.png" alt="RabbitMQ" width="20px"></span>
 
 ### Create
 
@@ -71,7 +71,7 @@ In the _Service Detail_ page you can access to various information of your datab
   Random generated password of the Administrator user.
 
 ```{tip}
-For security reason we suggest you to create a new application-specific username and password, using a strong password and the least privilege principle
+For security reason we suggest you to create a new application-specific username and password, using password policy recommendations and the least privilege principle
 ```
 
 In the _Operations_ section, at bottom, you can view information of the tasks created by various Actions you can run on your SQL database using JetDeploy console.
@@ -101,7 +101,7 @@ JetDeploy is **in closed alpha** *status*, so at the moment to increase the Stor
 
 - Management `console` of RabbitMQ
 
-    Simply visit your Console endpoint and insert credentials to authenticate!
+    Simply visit your instance Console endpoint and insert credentials to authenticate!
 
 - `rabbitmqadmin` command line for RabbitMQ
 
@@ -113,7 +113,7 @@ JetDeploy is **in closed alpha** *status*, so at the moment to increase the Stor
     Status: `Ready`  
     External Endpoint: `bards-tats.gw1.jetdeploy.app:18154`  
     Internal Endpoint: `bards-tats:5672`  
-    Management console: `https://bards-tats.jetdeploy.app`  
+    Console Endpoint: `https://bards-tats.jetdeploy.app`  
     Username: `admin` (created on setup)  
     Password: `26f9a4ae79e64a4e804056561ca32be4`  
     ```
