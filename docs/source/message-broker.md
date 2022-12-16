@@ -1,4 +1,4 @@
-# Message Brokers
+# Message Broker
 
 In JetDeploy console you can start a fully dedicated Message Broker instance to accomplish Publish/Subscribe pattern in your webapp architecture. Supported platform is:
 

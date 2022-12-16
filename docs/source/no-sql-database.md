@@ -1,4 +1,4 @@
-# No-SQL Databases
+# No-SQL Database
 
 In JetDeploy console you can start a fully dedicated No-SQL database instance. Supported platforms are:
 

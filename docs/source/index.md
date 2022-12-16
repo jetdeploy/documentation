@@ -14,10 +14,10 @@ JetDeploy is **in closed alpha** *status*.
 ```{toctree}
 resources
 apps
-sql-databases
-no-sql-databases
+sql-database
+no-sql-database
 in-memory-db
-message-brokers
+message-broker
 s3-object-storage
 terms-privacy
 ```

@@ -1,4 +1,4 @@
-# SQL Databases
+# SQL Database
 
 In JetDeploy console you can start a fully dedicated SQL Database instance. Supported platforms are:
 
