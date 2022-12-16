@@ -20,7 +20,7 @@ Click _Next_ button to add few more specifications:
 
 - __Storage size__
   
-  Define the initial max storage size of the database
+  Define the initial max storage capacity of the instance
 
 ```{note}
 Connection and authentication data (e.g. host, port, username, password and management console) will be visible in the detail page after database creation success.
@@ -74,11 +74,13 @@ In the _Service Detail_ page you can access to various information of your datab
 For security reason we suggest you to create a new application-specific username and password, using password policy recommendations and the least privilege principle
 ```
 
+You could find additional fields in the _Service Detail_ page that are specific for the type of Service you're running.
+
 In the _Operations_ section, at bottom, you can view information of the tasks created by various Actions you can run on your SQL database using JetDeploy console.
 
 ### Actions
 
-Different types of _Action_ can be executed on a SQL database instance:
+Different types of _Action_ can be executed on your instance:
 
 <span><img src="/_static/images/expose.png" alt="Expose" width="80px"> Use this action when you need to connect to your SQL database instance from external, e.g. your development computer or an application or service not running in JetDeploy platform.  
 For security reasons we suggest you to keep _external access_ active for a short period of time, limited to the time necessary for data migration or database maintenance.</span>
@@ -99,11 +101,13 @@ JetDeploy is **in closed alpha** *status*, so at the moment to increase the Stor
 
 ### Usage examples
 
+#### RabbitMQ
+
 - Management `console` of RabbitMQ
 
     Simply visit your instance Console endpoint and insert credentials to authenticate!
 
-- `rabbitmqadmin` command line for RabbitMQ
+- `rabbitmqadmin` command line tool
 
     Check connection details in the _Service Detail_ page:
 
@@ -140,3 +144,5 @@ JetDeploy is **in closed alpha** *status*, so at the moment to increase the Stor
     | admin | rabbit_password_hashing_sha256 | Sg4nE8NveZ/PzK1QHyDftr2tU2OPz1ae2ciyqd88byKur9BC | administrator |
     +-------+--------------------------------+--------------------------------------------------+---------------+
     ```
+
+    Great! You're now ready to use your message broker instance!

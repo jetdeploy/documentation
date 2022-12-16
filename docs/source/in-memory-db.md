@@ -1,10 +1,8 @@
-# SQL Databases
+# In-Memory DB
 
-In JetDeploy console you can start a fully dedicated SQL Database instance. Supported platforms are:
+In JetDeploy console you can start a fully dedicated In-Memory database instance, based on key-value store or other pattern types. Usually these kind of services are used for caching purpose in a webapp architecture. Supported platforms are:
 
-- PostgreSQL <span><img src="/_static/images/postgresql.png" alt="PostgreSQL" width="28px"></span>
-- MariaDB <span><img src="/_static/images/mariadb.png" alt="MariaDB" width="28px"></span>
-- MySQL <span><img src="/_static/images/mysql.png" alt="MySQL" width="28px"></span>
+- Redis <span><img src="/_static/images/redis.png" alt="Redis" width="28px"></span>
 
 ### Create
 
@@ -12,17 +10,13 @@ During service creation you need to select:
 
 - __Type__
   
-  Choose one of the supported database type and version
+  Choose one of the supported platform type and version
 
 - __Service name__
   
   A unique service ident name. This name cannot be changed after creation. A random string is filled as initial default value
 
 Click _Next_ button to add few more specifications:
-
-- __Database name__
-  
-  Choose a database name that will be created on setup
 
 - __Storage size__
   
@@ -40,11 +34,11 @@ In the _Service Detail_ page you can access to various information of your datab
 
 - __Type__
   
-  Type of your database instance (e.g. PostgreSQL, MariaDB, etc.)
+  Type of your database instance (e.g. Redis)
 
 - __Version__
   
-  Full version of your running database instance (e.g. `13.8` for PostgreSQL, `10.7` for MariaDB, etc.)
+  Full version of your running database instance (e.g. `7.0.5` for Redis)
 
 - __Status__
   
@@ -52,7 +46,7 @@ In the _Service Detail_ page you can access to various information of your datab
 
 - __External Endpoint__
   
-  It is the external endpoint of your database instance, reachable by your laptop, external services or apps running out of JetDeploy infrastructure. `<External-Host>`:`<External-Port>` you find here can be used to connect by client utilities (_psql_ for PostgreSQL, _mysql_ for MariaDB/MySQL) for database administration tasks.
+  It is the external endpoint of your database instance, reachable by your laptop, external services or apps running out of JetDeploy infrastructure. `<External-Host>`:`<External-Port>` you find here can be used to connect by client utilities (_redis-cli_ for Redis) for database administration tasks.
 
   ```{note}
   Visible only when <span><img src="/_static/images/expose.png" alt="Expose" width="60px"></span> action done
@@ -62,23 +56,17 @@ In the _Service Detail_ page you can access to various information of your datab
   
   It is the internal endpoint of your database instance, reachable by other Services or Apps you create in JetDeploy. `<Host>`:`<Port>` you find here can be used as _Environment variables_ in your App to connect to this service.
 
-- __Database Name__
-  
-  Name of the custom database (created at startup) you choose during the creation process. `<name>` of the database you find here can be used as _Environment variable_ in your App to connect to this database instance.
-
 - __Username__
   
-  Root user of the database instance (e.g. `postgres` for PostgreSQL, `root` for MariaDB/MySQL).
+  Admin user of the database instance.
+
+  ```{note}
+  Redis has no username but only a Redis password
+  ```
 
 - __Password__
   
-  Random generated password of the root user.
-
-```{tip}
-For security reason we suggest you to create a new application-specific username and password, using password policy recommendations and the least privilege principle
-```
-
-You could find additional fields in the _Service Detail_ page that are specific for the type of Service you're running.
+  Random generated password of the admin user.
 
 In the _Operations_ section, at bottom, you can view information of the tasks created by various Actions you can run on your SQL database using JetDeploy console.
 
@@ -105,49 +93,38 @@ JetDeploy is **in closed alpha** *status*, so at the moment to increase the Stor
 
 ### Usage examples
 
-#### PostgreSQL
+#### Redis
 
-- `psql` utility
+- `redis-cli` utility
 
     First of all you should _Expose_ your Service if you run the utility on your local laptop.  
     Then check connection details in the _Service Detail_ page:
 
     ```{note}
-    Type: `PostgreSQL`  
-    Version: `13.8`  
+    Type: `Redis`  
+    Version: `7.0.5`  
     Status: `Ready`  
-    External Endpoint: `creaky-pelting.gw1.jetdeploy.app:19184`  
-    Internal Endpoint: `creaky-pelting:5432`  
-    Database Name: `database-0` (created on setup)  
-    Username: `postgres` (created on setup)  
-    Password: `726221f8f95042e5be434df1a906bb5c`  
+    External Endpoint: `rapports-waysides.gw1.jetdeploy.app:48578`  
+    Internal Endpoint: `rapports-waysides-master:6379`  
+    Password: `fb71f8a12bbc4ffd89159c3267249deb`  
     ```
     
     Now you're ready to connect:
 
     ```bash
-    $ psql -h creaky-pelting.gw1.jetdeploy.app -p 19184 -U postgres database-0
+    $ export REDISCLI_AUTH=fb71f8a12bbc4ffd89159c3267249deb
+    $ redis-cli -h rapports-waysides.gw1.jetdeploy.app -p 48578
     ```
     
-    Press enter. The utility will ask for a password:
+    Press enter 
 
     ```bash
-    Password for user postgres:
-    ```
-    
-    Insert the password and press Enter
-
-    ```bash
-    psql (13.8)
-    Type "help" for help.
-
-    database-0=#
+    rapports-waysides.gw1.jetdeploy.app:48578> SET mykey "Hello\nWorld"
+    OK
+    rapports-waysides.gw1.jetdeploy.app:48578> GET mykey
+    "Hello\nWorld"
+    rapports-waysides.gw1.jetdeploy.app:48578> DEL mykey
+    (integer) 1
     ```
 
     Great! You're now ready to use your SQL database instance!
-
-#### MySQL
-
- - `mysql` utility
-
-    _Under development_

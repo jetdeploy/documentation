@@ -15,7 +15,8 @@ JetDeploy is **in closed alpha** *status*.
 resources
 apps
 sql-databases
-no-sql-and-in-memory-db
+no-sql-databases
+in-memory-db
 message-brokers
 s3-object-storage
 terms-privacy
