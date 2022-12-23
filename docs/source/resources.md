@@ -2,7 +2,7 @@
 
 In JetDeploy you can create different kind of services that allow you to store your data and run your web application to serve your clients.
 
-Services are:
+Our supported services are:
 
 * [Apps](#apps)
 * [SQL Databases](#sql-databases)
