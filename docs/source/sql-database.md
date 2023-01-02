@@ -86,12 +86,18 @@ In the _Operations_ section, at bottom, you can view information of the tasks cr
 
 Different types of _Action_ can be executed on your instance:
 
-<span><img src="/_static/images/expose.png" alt="Expose" width="80px"> Use this action when you need to connect to your SQL database instance from external, e.g. your development computer or an application or service not running in JetDeploy platform.  
-For security reasons we suggest you to keep _external access_ active for a short period of time, limited to the time necessary for data migration or database maintenance.</span>
+<span><img src="/_static/images/expose.png" alt="Expose" width="80px"> Use this action when you need to connect to your instance from external, e.g. your development computer or an application or service not running in JetDeploy platform.  
+For security reasons we suggest you to keep _external access_ active for a short period of time, limited to the time necessary for data migration, troubleshooting or maintenance tasks.</span>
 
-<span><img src="/_static/images/restart.png" alt="Restart" width="80px"> Invoke a restart of your SQL database instance.</span>
+<span><img src="/_static/images/view-logs.png" alt="View Logs" width="80px"> Use this action when you need to view logs of your instance.</span>
 
-<span><img src="/_static/images/destroy.png" alt="Destroy" width="80px"> Request a service destroy of your SQL databse instance.</span>
+<span><img src="/_static/images/start.png" alt="Start" width="30px"> Start of your instance, usually when your instance has been previously stopped.</span>
+
+<span><img src="/_static/images/stop.png" alt="Stop" width="30px"> Stop of your instance</span>
+
+<span><img src="/_static/images/restart.png" alt="Restart" width="30px"> Restart of your instance.</span>
+
+<span><img src="/_static/images/destroy.png" alt="Destroy" width="30px"> Request a service destroy of your instance.</span>
 
 ```{warning}
 `Destroy` action is risky and you will lose all your data. Please be absolutely sure when run this action.
