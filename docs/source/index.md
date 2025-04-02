@@ -18,5 +18,5 @@ sql-database
 no-sql-database
 in-memory-db
 message-broker
-terms-privacy
+terms
 ```
