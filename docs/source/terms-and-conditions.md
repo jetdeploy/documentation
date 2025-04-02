@@ -6,7 +6,7 @@ _Last Updated: April 2, 2025_
 
 ---
 
-## 1. Introduction
+## Introduction
 
 JetDeploy provides a platform-as-a-service (PaaS) designed to help customers deploy, manage, and scale their applications. This Agreement sets forth the legally binding terms and conditions for your use of our Service.
 
@@ -23,7 +23,7 @@ Our specialists are dedicated to ensuring the best experience for you and your c
 
 ---
 
-## 2. Definitions
+## Definitions
 
 - **"Account"** – The unique account created for you to access the Service.
 - **"Customer"** or **"You"** – The entity or individual that has entered into this Agreement with JetDeploy.
@@ -33,14 +33,14 @@ Our specialists are dedicated to ensuring the best experience for you and your c
 
 ---
 
-## 3. Account Registration and Security
+## Account Registration and Security
 
 - **Registration:** You must register for an Account to access the Service and provide accurate and complete information.
 - **Security:** You are responsible for maintaining the confidentiality of your Account credentials and must notify JetDeploy of any unauthorized use.
 
 ---
 
-## 4. Use of the Service
+## Use of the Service
 
 - **License:** JetDeploy grants you an exclusive, non-transferable, revocable license to use the Service.
 - **Permitted Use:** You may use the Service only for lawful purposes and in accordance with this Agreement.
@@ -48,7 +48,7 @@ Our specialists are dedicated to ensuring the best experience for you and your c
 
 ---
 
-## 5. Payment and Fees
+## Payment and Fees
 
 - **Billing:** Fees are charged as described on our pricing page or in a separate agreement.
 - **Payment Terms:** Fees are billed at the end of each month based on your usage, unless otherwise stated, and are automatically charged to the credit card registered on the platform. All payments are non-refundable unless explicitly specified.  
@@ -56,7 +56,7 @@ Our specialists are dedicated to ensuring the best experience for you and your c
 
 ---
 
-## 6. Prohibited Behavior  
+## Prohibited Behavior  
 
 JetDeploy prohibits hosting, processing, or distributing content that includes, but is not limited to:  
 
@@ -77,14 +77,14 @@ Violation may result in account termination without notice and potential legal a
 
 ---
 
-## 7. Intellectual Property
+## Intellectual Property
 
 - **Ownership:** JetDeploy and its licensors retain all intellectual property rights in the Service.
 - **Customer Content:** You retain ownership of your data and grant JetDeploy a limited license to use it solely to provide the Service.
 
 ---
 
-## 8. Data Security and Privacy
+## Data Security and Privacy
 
 JetDeploy is committed to protecting your privacy. As part of our GDPR compliance, we implement commercially reasonable security measures to protect your personal data and provide transparency in our data practices.
 
@@ -121,9 +121,9 @@ To exercise any of these rights, please contact us at **legal@jetdeploy.com**.
 
 ---
 
-## 9. Service Level Agreement (SLA)
+## Service Level Agreement (SLA)
 
-### 9.1 Uptime Commitment
+### Uptime Commitment
 JetDeploy aims for **high availability** of its Service, with a target of **99% uptime**, excluding scheduled maintenance and unforeseen events beyond our control.
 
 Please note that JetDeploy may schedule regular maintenance windows, primarily during nighttime hours, where the Service may be temporarily unavailable. These maintenance windows will be communicated in advance, and we will make every effort to minimize downtime during these periods.
@@ -131,14 +131,14 @@ Please note that JetDeploy may schedule regular maintenance windows, primarily d
 Scheduled maintenance is typically performed during low-traffic hours to minimize the impact on customers.
 
 
-### 9.2 Maintenance and Downtime
+### Maintenance and Downtime
 
 - **Scheduled Maintenance:** At least 24 hours notice will be provided for planned maintenance.
 - **Emergency Maintenance:** May occur with shorter notice for critical updates or security patches.
 
 ---
 
-## 10. Term and Termination
+## Term and Termination
 
 - **Term:** This Agreement remains in effect until terminated.
 - **Termination by You:** You may terminate your Account at any time.
@@ -147,7 +147,7 @@ Scheduled maintenance is typically performed during low-traffic hours to minimiz
 
 ---
 
-## 11. Hold Harmless Clause
+## Hold Harmless Clause
 
 You agree to indemnify, defend, and hold harmless JetDeploy, its officers, directors, employees, agents, and affiliates from and against any claims, liabilities, damages, losses, and expenses (including reasonable attorney fees and legal costs) arising out of or related to:
 
@@ -163,12 +163,12 @@ This indemnification obligation will survive the termination of this Agreement a
 
 ---
 
-## 12. Changes
+## Changes
 
 WE MAY CHANGE THE TERMS OF THIS AGREEMENT FROM TIME TO TIME BY POSTING THE UPDATED AGREEMENT ON THE WEBSITE. YOU CAN REVIEW THE MOST CURRENT VERSION OF THIS AGREEMENT AT ANY TIME AT https://jetdeploy.com/legal/terms-and-conditions OR A SUCCESSOR URL THAT WE MAY DESIGNATE. THE REVISED TERMS AND CONDITIONS WILL BECOME EFFECTIVE IMMEDIATELY AFTER WE POST THE UPDATED TEXT ON THE WEBSITE. IF YOU USE THE SERVICES AFTER SUCH DATE, SUCH USE WILL CONSTITUTE ACCEPTANCE OF THE REVISED TERMS AND CONDITIONS. We also reserve the right to modify the Services from time to time in our sole discretion. If any change to this Agreement is not acceptable to you, or if any change we make to the Services is a material reduction in functionality, you may, as your sole remedy for such change, stop using the Services and send a cancellation request email to legal@jetdeploy.com.
 
 ---
 
-## 12. Contact Information
+## Contact Information
 
 For any questions, contact: legal@jetdeploy.com.
