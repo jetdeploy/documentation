@@ -79,7 +79,7 @@ Violation may result in account termination without notice and potential legal a
 
 ## Intellectual Property
 
-- **Ownership:** JetDeploy and its licensors retain all intellectual property rights in the Service.
+- **Ownership:** JetDeploy retain all intellectual property rights in the Service.
 - **Customer Content:** You retain ownership of your data and grant JetDeploy a limited license to use it solely to provide the Service.
 
 ---
