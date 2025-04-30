@@ -143,7 +143,7 @@ Scheduled maintenance is typically performed during low-traffic hours to minimiz
 - **Term:** This Agreement remains in effect until terminated.
 - **Termination by You:** You may terminate your Account at any time.
 - **Termination by JetDeploy:** We may suspend or terminate your access to the Service for violations of this Agreement or at our sole discretion. JetDeploy also reserves the right to discontinue the Service entirely at any time. In such cases, affected customers will be notified in advance whenever reasonably possible.  
-- **Effect of Termination:** Your access to the Service ceases immediately. Outstanding fees remain payable.
+- **Effect of Termination:** Your access to the Service ceases immediately. Outstanding fees remain due and payable.
 
 ---
 
