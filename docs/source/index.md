@@ -18,5 +18,4 @@ sql-database
 no-sql-database
 in-memory-db
 message-broker
-terms-and-conditions
 ```
